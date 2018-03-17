@@ -15,6 +15,8 @@
 		47F8D99E205CDFB00046B390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F8D99C205CDFB00046B390 /* LaunchScreen.storyboard */; };
 		47F8D9A9205CDFB00046B390 /* BlackBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F8D9A8205CDFB00046B390 /* BlackBoxTests.swift */; };
 		47F8D9B4205CDFB00046B390 /* BlackBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F8D9B3205CDFB00046B390 /* BlackBoxUITests.swift */; };
+		47F8D9C8205CDFE70046B390 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F8D9C7205CDFE70046B390 /* KeyboardViewController.swift */; };
+		47F8D9CC205CDFE70046B390 /* qwerty.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 47F8D9C5205CDFE60046B390 /* qwerty.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +34,28 @@
 			remoteGlobalIDString = 47F8D98C205CDFB00046B390;
 			remoteInfo = BlackBox;
 		};
+		47F8D9CA205CDFE70046B390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47F8D985205CDFB00046B390 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47F8D9C4205CDFE60046B390;
+			remoteInfo = qwerty;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		47F8D9D0205CDFE70046B390 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				47F8D9CC205CDFE70046B390 /* qwerty.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		47F8D98D205CDFB00046B390 /* BlackBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +72,9 @@
 		47F8D9AF205CDFB00046B390 /* BlackBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F8D9B3205CDFB00046B390 /* BlackBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBoxUITests.swift; sourceTree = "<group>"; };
 		47F8D9B5205CDFB00046B390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47F8D9C5205CDFE60046B390 /* qwerty.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = qwerty.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		47F8D9C7205CDFE70046B390 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		47F8D9C9205CDFE70046B390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +99,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47F8D9C2205CDFE60046B390 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +115,7 @@
 				47F8D98F205CDFB00046B390 /* BlackBox */,
 				47F8D9A7205CDFB00046B390 /* BlackBoxTests */,
 				47F8D9B2205CDFB00046B390 /* BlackBoxUITests */,
+				47F8D9C6205CDFE70046B390 /* qwerty */,
 				47F8D98E205CDFB00046B390 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +126,7 @@
 				47F8D98D205CDFB00046B390 /* BlackBox.app */,
 				47F8D9A4205CDFB00046B390 /* BlackBoxTests.xctest */,
 				47F8D9AF205CDFB00046B390 /* BlackBoxUITests.xctest */,
+				47F8D9C5205CDFE60046B390 /* qwerty.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +163,15 @@
 			path = BlackBoxUITests;
 			sourceTree = "<group>";
 		};
+		47F8D9C6205CDFE70046B390 /* qwerty */ = {
+			isa = PBXGroup;
+			children = (
+				47F8D9C7205CDFE70046B390 /* KeyboardViewController.swift */,
+				47F8D9C9205CDFE70046B390 /* Info.plist */,
+			);
+			path = qwerty;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +182,12 @@
 				47F8D989205CDFB00046B390 /* Sources */,
 				47F8D98A205CDFB00046B390 /* Frameworks */,
 				47F8D98B205CDFB00046B390 /* Resources */,
+				47F8D9D0205CDFE70046B390 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				47F8D9CB205CDFE70046B390 /* PBXTargetDependency */,
 			);
 			name = BlackBox;
 			productName = BlackBox;
@@ -184,6 +230,23 @@
 			productReference = 47F8D9AF205CDFB00046B390 /* BlackBoxUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		47F8D9C4205CDFE60046B390 /* qwerty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47F8D9CD205CDFE70046B390 /* Build configuration list for PBXNativeTarget "qwerty" */;
+			buildPhases = (
+				47F8D9C1205CDFE60046B390 /* Sources */,
+				47F8D9C2205CDFE60046B390 /* Frameworks */,
+				47F8D9C3205CDFE60046B390 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qwerty;
+			productName = qwerty;
+			productReference = 47F8D9C5205CDFE60046B390 /* qwerty.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +271,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 47F8D98C205CDFB00046B390;
 					};
+					47F8D9C4205CDFE60046B390 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 47F8D988205CDFB00046B390 /* Build configuration list for PBXProject "BlackBox" */;
@@ -226,6 +293,7 @@
 				47F8D98C205CDFB00046B390 /* BlackBox */,
 				47F8D9A3205CDFB00046B390 /* BlackBoxTests */,
 				47F8D9AE205CDFB00046B390 /* BlackBoxUITests */,
+				47F8D9C4205CDFE60046B390 /* qwerty */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +317,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		47F8D9AD205CDFB00046B390 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47F8D9C3205CDFE60046B390 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,6 +359,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47F8D9C1205CDFE60046B390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47F8D9C8205CDFE70046B390 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -296,6 +379,11 @@
 			isa = PBXTargetDependency;
 			target = 47F8D98C205CDFB00046B390 /* BlackBox */;
 			targetProxy = 47F8D9B0205CDFB00046B390 /* PBXContainerItemProxy */;
+		};
+		47F8D9CB205CDFE70046B390 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47F8D9C4205CDFE60046B390 /* qwerty */;
+			targetProxy = 47F8D9CA205CDFE70046B390 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -429,6 +517,7 @@
 		47F8D9B9205CDFB00046B390 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7N7XWYW5EX;
@@ -444,6 +533,7 @@
 		47F8D9BA205CDFB00046B390 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7N7XWYW5EX;
@@ -522,6 +612,36 @@
 			};
 			name = Release;
 		};
+		47F8D9CE205CDFE70046B390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5AT89PF4G7;
+				INFOPLIST_FILE = qwerty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackbox.BlackBox.qwerty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47F8D9CF205CDFE70046B390 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5AT89PF4G7;
+				INFOPLIST_FILE = qwerty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackbox.BlackBox.qwerty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,6 +677,15 @@
 			buildConfigurations = (
 				47F8D9BF205CDFB00046B390 /* Debug */,
 				47F8D9C0205CDFB00046B390 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47F8D9CD205CDFE70046B390 /* Build configuration list for PBXNativeTarget "qwerty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47F8D9CE205CDFE70046B390 /* Debug */,
+				47F8D9CF205CDFE70046B390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
