@@ -57,7 +57,6 @@ class KeyboardViewController: UIInputViewController {
             addConstraints(buttons: buttons, containingView: topRow)
             row += 1
         }
-        
         self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
     }
